@@ -1,9 +1,13 @@
+* {
+    overflow: clip;
+}
+
 .container {
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto 600px auto;
+    grid-template-rows: auto 690px auto;
     grid-gap: 30px;
     grid-template-areas:
         "hd hd hd"
@@ -13,9 +17,17 @@
 
 
 header {
-    border: solid;
-    border-color: blue;
+    display: inline-block;
     grid-area: hd;
+}
+
+.hlink {
+    color: #3b3b3b;
+    font-size: 12px;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 
@@ -23,18 +35,37 @@ main {
     grid-area: mn;
     justify-self: center;
     align-self: center;
-    border: solid;
-    border-color: blue;
+}
+
+.sbarcont{
+    display: grid;
+    width: 600px;
+    height: 40px;
+    border-style: solid;
+    border-color: #f0f0f0;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+#mag {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    opacity: 30%;
 }
 
 .sbar {
-    border-radius: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 600px;
-    height: 30px;
+    /*border-radius: 40px;
+    margin-top: 15px;
+    margin-bottom: 18px;*/
+    justify-self: center;
+    align-self: start;
+    width: 350px;
+    font-size: 16px;
     border-style: solid;
+    border-color: white;
 }
+
 
 .box {
     display: grid;
@@ -59,5 +90,16 @@ main {
 
 footer {
     grid-area: ft;
-    align-items: end;
+    background-color: #f0f0f0;
+    padding-top: 30px;
+    padding-bottom: 28px;
+}
+
+.flink {
+    color: #3b3b3b;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 20px;
 }
